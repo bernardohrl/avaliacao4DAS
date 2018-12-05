@@ -1,0 +1,18 @@
+    O Desenvolvimento Baseado em Componentes (DBC) surge como uma perspectiva de desenvolvimento que visa o desenvolvimento de software utilizando parte já existentes, possibilitando um desenvolvimento de software mais rápido e de maior qualidade.
+    Nesta perspectiva existem alguns elementos definidos que são cruciais para a reutilização, tais como Componentes, Modelo de Componentes e Framework de Componentes.
+
+Componentes
+    O termo “componente” possui diferentes definições na literatura, de acordo com Sametinger (1997) pode ser definido como uma parte reutilizável e facilmente identificável de um sistema. Este deve possuir uma função clara e específica dentro do sistema e pode ser reutilizado. Para Sametinger o componente não precisa ser necessariamente uma abstração de código, mas qualquer parte de um sistema de software que siga as características supracitadas. 
+
+Modelo de Componentes (MC)
+    Um modelo de componentes pode ser definido como uma abstração arquitetural que define um conjunto de padrões e convenções dos componentes de um sistema. A sua função é expressar restrições arquiteturais ou globias de um projeto.
+    Mesmo não existindo um consenso sobre o que deve, ou não, estar incluso em um modelo de componentes, espera-se ter informações sobre qual o tipo do componente, com quem e como ele se comunica e quais recursos utiliza.
+
+Framework de Componentes (FC)
+    O Framework de componentes pode ser definido como os serviços que dão suporte ou reforçam o MC. A sua função é, de acordo com Spagnoli (2003), “gerenciar os recursos compartilhados pelos componentes e prover um mecanismo que possibilite a comunicação (interação) entre eles”.
+    O uso do FC auxilia os desenvolvedores de componentes diminuindo a complexidade de desenvolvimento, afinal estes não precisam se preocupar com serviços relacionados à comunicação entre componentes.
+
+
+Referências
+1. Spagnoli, Luciana, and Karin Becker. "Um estudo sobre o desenvolvimento baseado em componentes." Relatório Técnico do Programa de Pós-Graduação em Ciência da Computação da PUCRS, Porto Alegre, Brasil (2003).
+2. Sametinger, Johannes. Software engineering with reusable components. Springer Science & Business Media, 1997.
