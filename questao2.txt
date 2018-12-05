@@ -1,0 +1,9 @@
+    De acordo com Spagnoli e Becker (2003), os componentes devem estar em conformidade com as as definições do modelo de componentes, e respeitando as formas de interação definidas, além de se utilizarem dos serviços disponibilizados. Equiparam-se aos stubs, que são objetos do lado do cliente que representam um único objeto do servidor dentro da JVM do cliente. Um stub implementa os mesmos métodos que o objeto do servidor, mantendo a conexão via socket automaticamente, e é responsável pela serialização do lado do cliente, para recuperar seu conteúdo e criar uma nova instância da classe a qual eles derivam.
+
+    O framework de componente é responsável por gerenciar os recursos compartilhados pelos componentes e prover um mecanismo que possibilite a comunicação entre eles. Spagnoli e Becker (2003) definem ainda que a infra-estrutura oferecida pelos frameworks de componentes impõem restrições e regras no projeto e implementação, representando os skeletons, que são objetos do lado do servidor que são responsáveis por manter conexões de rede e serializar dados no lado do servidor, comunicando-se com os stubs.
+
+    O modelo de componentes, de acordo com Bachmann (2002) ajuda a definir alguns padrões e convenções, como por exemplo: tipos de componentes, garantindo diferentes formas de interação entre estes, formas de interação, através da especificação de como os componentes são localizados, o protocolo de comunicação utilizado e como alcançar a qualidade dos serviços. Se assemelha ao funcionamento dos registros, que funcionam como apontadores para os serviços remotos que se deseja utilizar. O cliente primeiramente deve se comunicar com o registro para se conectar com o serviço remoto que deseja utilizar.
+
+
+Referências
+    Grosso, William. Java rmi. O'Reilly Japan, 2002.
