@@ -5,15 +5,22 @@ import java.lang.Thread.*;
 import java.util.ArrayList;
 import java.rmi.RemoteException;
 
+/*
+* O cliente acessa os serviços do servidor
+*/
+
 public class Cliente {
 
     public static void main( String args[] ) {
 
 
         try {
+            /* 
+            * O stub é criado, permitindo o acesso dos cliente ao servidor remoto
+            * e a utilização dos seus métodos
+            */
             final ServidorChat chat = (ServidorChat) Naming.lookup("rmi://localhost:1098/ServidorChat");
 
-            // System.out.println("Passou inicializacao servidor chat\n\n");
             
             String nome;
             String msg = "";
@@ -47,17 +54,18 @@ public class Cliente {
 
                 msg = scanner.nextLine();
 
+
+                /*
+                * Utilização do método remoto
+                */
                 chat.enviarMensagemTodos(nome + ": " + msg + "\n");
 
-                // System.out.println("\n\nDigite uma mensagem a todos os usuários:");
             }
 
         }
         catch( Exception e ) {
-            // System.out.println("Entrou no catch\n\n");
             e.printStackTrace();
         }
 
-        // System.out.println("\n\n\nSAIU\n\n");
     }
 }

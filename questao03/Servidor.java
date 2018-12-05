@@ -2,6 +2,11 @@ import java.rmi.Naming;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 
+/*
+* O registro aponta para o serviço remoto que será utilizado, ligando-o ao chat.
+* Aqui o skeleton é gerado.
+*/
+
 public class Servidor {
     public Servidor(){
         try {
